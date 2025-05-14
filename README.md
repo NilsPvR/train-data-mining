@@ -7,6 +7,7 @@ A Jupyter Notbook is used for the documentation and application of the technique
 ## The data
 
 The data has been manually sampled during all my train rides starting in November 2023. The data set contains information about every train I took since the start of data collection. Due to resulting privacy concerns the original data set will not be published. However a small sample is provided to give a general idea of the data.
+I initially started to document the train rides because I felt like the times I had a ticket inspection were dependent on the train line and time of day. The fact that I could use this data set for the module is a nice coincidence.
 
 ## Setup
 To run this repo locally clone the repo.
