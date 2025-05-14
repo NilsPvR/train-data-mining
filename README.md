@@ -1,6 +1,10 @@
 > [!NOTE]
 > This repo is currently a WIP!
 
+<div align="center">
+    <img src="./nl-train-icon.png" height="300" width="300" /> 
+</div>
+
 # Train data mining
 
 This repo performs some data mining techniques on a train data set (literal train/🚄 not training) and explains the general idea of the used methods. This has been created for the practical exercise as part of my study in computer science for the module "Data Mining".
