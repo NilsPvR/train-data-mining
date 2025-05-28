@@ -1,2 +1,5 @@
+# Preserve PNG files
+*.png -text
+
 * eol=lf
 *.ipynb filter=strip-notebook-output
