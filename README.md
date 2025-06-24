@@ -7,7 +7,7 @@
 
 # Train data mining
 
-This repo performs some data mining techniques on a train data set (literal train/🚄 not training) and explains the general idea of the used methods. This has been created for the practical exercise as part of my study in computer science for the module "Data Mining".
+This repo performs some data mining techniques on a train data set (literal train/🚄 not training) and explains the general idea of the used methods. This has been created for the practical exercise as part of my study in computer science for the module "Data Mining". The gaol of the exercise was to learn about different technieques and possibilities with data mining.
 
 A Jupyter Notbook is used for the documentation and application of the techniques. To avoid cluttering of version control the output and metadata are stripped (see [Setup](#setup)). To document the results a full output will occasionally be commited to version control.
 
