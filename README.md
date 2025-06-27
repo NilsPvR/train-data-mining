@@ -33,5 +33,5 @@ pip install -r requirements.txt
 Configure the git filter for Jupyter Notebooks ([Credits](https://gist.github.com/33eyes/431e3d432f73371509d176d0dfb95b6e)).
 ```shell
 # Change the filter according to your venv activation (docs link above)
-git config filter.strip-notebook-output.clean 'source .venv/Scripts/activate && jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'
+git config filter.strip-notebook-output.clean 'source .venv/Scripts/activate && jupyter nbconvert --ClearOutputPreprocessor.enabled=True --ClearMetadataPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'
 ```
