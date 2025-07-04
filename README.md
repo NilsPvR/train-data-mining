@@ -19,7 +19,15 @@ I initially started to document the train rides because I felt like the times I 
 ## Setup
 To run this repo locally clone the repo.
 ```shell
-git clone https://github.com/NilsPvR/train-data
+git clone https://github.com/NilsPvR/census-income-data-mining
+```
+Configure the git filter for Jupyter Notebooks ([Credits](https://gist.github.com/33eyes/431e3d432f73371509d176d0dfb95b6e)). Change the filter according to your venv activation (docs link below)
+```shell
+# Example for Windows (using venv)
+git config filter.strip-notebook-output.clean 'source .venv/Scripts/activate && jupyter nbconvert --ClearOutputPreprocessor.enabled=True --ClearMetadataPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'
+
+# Example for POSIX compliant OS with bash (when notebook package is globally installed)
+git config filter.strip-notebook-output.clean 'jupyter nbconvert --ClearOutputPreprocessor.enabled=True --ClearMetadataPreprocessor.enabled=True --to=notebook --stdin --stdout log-level=ERROR 2> /dev/null'
 ```
 Configure your [venv](https://docs.python.org/3/library/venv.html) and activate it.
 ```shell
@@ -29,9 +37,4 @@ python -m venv ./.venv
 Install required packages, e.g. with pip.
 ```shell
 pip install -r requirements.txt
-```
-Configure the git filter for Jupyter Notebooks ([Credits](https://gist.github.com/33eyes/431e3d432f73371509d176d0dfb95b6e)).
-```shell
-# Change the filter according to your venv activation (docs link above)
-git config filter.strip-notebook-output.clean 'source .venv/Scripts/activate && jupyter nbconvert --ClearOutputPreprocessor.enabled=True --ClearMetadataPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'
 ```
