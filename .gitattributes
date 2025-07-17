@@ -1,5 +1,4 @@
-# Preserve PNG files
-*.png -text
+# Apply LF ending to all text files
+* text=auto
 
-* eol=lf
 *.ipynb filter=strip-notebook-output
